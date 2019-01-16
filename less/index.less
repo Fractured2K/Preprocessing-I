@@ -59,6 +59,14 @@ html, body {
 	font-size: 62.5%;
 }
 
+// Variables
+@box-heading: 2.8rem;
+@box-heading-weight: 900;
+
+// Colors
+@defaultWhite: #fff;
+@primaryPurple: #081427;
+@secondaryPurple: #111e33;
 
 // Mixins
 .keyframes(@name; @arguments) {
@@ -69,251 +77,261 @@ html, body {
 	animation: @arguments;
 }
 
-//
+.BoxHeading() {
+	font-size: @box-heading;
+	font-weight: @box-heading-weight;
+	color: @defaultWhite;
+}
+
+.BoxSpacing {
+	margin: 20px 40px 20px;
+}
 
 .container {
     display: flex;
 	justify-content: center;
 	flex-direction: column;
-}
 
-.box-one {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: center;
-    flex-direction: column;
-    background: #081427;
-    width: 800px;
-    height: 500px;
-	border-radius: 5px;
-	margin-top: 100px;
-
-	.picture {
-	margin-bottom: 20px;
-
-	& img {
-		width: 150px;
-		height: 150px;
-		border-radius: 50%;
-		}
-	}
-
-	& h1 	{
-    	font-size: 2.8rem;
-    	font-weight: 900;
-		color: #fff;
-
-		& span {
-			font-weight: 300;
-		}
-	}
-
-	.social {
-		margin: 20px 0;
-
-		& ul a {
-		color: #fff;
-		text-decoration: none;
-		padding: 0 3px;
-
-		& i {
-			width: 50px;
-			height: 50px;
-			border-radius: 50%;
-			text-align: center;
-			line-height: 50px;
-			vertical-align: middle;
-			background: #111e33;
-			font-size: 2.8rem;
-			}
-		}
-	}
-
-	.scroll {
-	position: relative;
-	top: 60px;
-
-	& a {
-		color: #fff;
-	}
-
-	& i {
-		font-size: 2.8rem;
-	}
-
-	.keyframes(bob; {
-		0% {
-			transform: translateY(8px)
-		}
-	});
-
-	.animation(bob 0.4s ease-in-out infinite alternate);
-}
-
-}
-
-.box-two {
-	display: flex;
-    align-self: center;
-    flex-direction: column;
-    background: #081427;
-    width: 800px;
-	border-radius: 5px;
-	margin-top: 20px;
-	color: #fff;
-	font-style: italic;
-
-	& h1 {
-		margin: 20px 40px 20px;
-	}
-
-	& p {
-		font-size: 1.8rem;
-		padding: 0 40px 30px;
-	}
-}
-
-.box-three {
-	display: flex;
-    align-self: center;
-    flex-direction: column;
-    background: #081427;
-    width: 800px;
-	border-radius: 5px;
-	margin-top: 20px;
-	color: #fff;
-	font-style: italic;
-
-	& h1 {
-		margin: 20px 40px 20px;
-	}
-
-	& ul {
-		display: flex;
-		justify-content: space-around;
-
-		& li {
-			width: 100px;
-			height: 100px;
-			border-radius: 50%;
-			text-align: center;
-			line-height: 100px;
-			vertical-align: middle;
-			background: #111e33;
-			margin: 20px 0;
-
-			& i {
-				padding: 20px;
-			}
-		}
-	}
-
-
-}
-
-.box-four {
-	display: flex;
-    align-self: center;
-    flex-direction: column;
-    background: #081427;
-    width: 800px;
-	border-radius: 5px;
-	margin-top: 20px;
-	color: #fff;
-
-	& h1 {
-		margin: 20px 40px 20px;
-	}
-
-	& ul li {
-		font-size: 1.6rem;
-		margin: 0 40px 20px;
-
-		& span {
-			font-style: italic;
-			padding: 0 10px;
-		}
-	}
-}
-
-.box-five {
-	display: flex;
-    align-self: center;
-    flex-direction: column;
-    background: #081427;
-    width: 800px;
-	border-radius: 5px;
-	margin-top: 20px;
-	color: #fff;
-
-	& h1 {
-		margin: 20px 40px 20px;
-	}
-
-	& ul li {
-		font-size: 1.6rem;
-		// TRBL
-		margin: 0 40px 20px;
-
-		 & span {
-			font-style: italic;
-			padding: 0 10px;
-		}
-	}
-}
-
-.box-contact {
-	display: flex;
-    align-self: center;
-    flex-direction: column;
-    background: #081427;
-    width: 800px;
-	border-radius: 5px;
-	margin-top: 20px;
-	color: #fff;
-	margin-bottom: 100px;
-
-	& h1 {
-		margin: 20px 40px 20px;
-	}
-
-	& form {
+	.box-one {
 		display: flex;
 		justify-content: center;
-		flex-direction: column;
 		align-items: center;
+		align-self: center;
+		flex-direction: column;
+		background: @primaryPurple;
+		width: 800px;
+		height: 500px;
+		border-radius: 5px;
+		margin-top: 100px;
 
-		& input {
-			background: transparent;
-			border: 1px solid #111e33;
-			padding: 20px;
-			border-radius: 5px;
-			width: 500px;
-			margin: 10px 40px 0px;
-			color: white;
-			font-size: 1.6rem;
+		.picture {
+		margin-bottom: 20px;
 
-			&::-webkit-input-placeholder {
-				color: #111e33;
+		& img {
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
 			}
 		}
 
-		& textarea {
-			background: transparent;
-			border: 1px solid #111e33;
-			padding: 20px;
-			border-radius: 5px;
-			width: 500px;
-			height: 300px;
-			margin: 10px 40px 30px;
-			color: white;
-			resize: none;
-			font-size: 1.6rem;
+		& h1 	{
+			.BoxHeading;
 
-			&::-webkit-input-placeholder {
-				color: #111e33;
+			& span {
+				font-weight: 300;
+			}
+		}
+
+		.social {
+			margin: 20px 0;
+
+			& ul a {
+			color: @defaultWhite;
+			text-decoration: none;
+			padding: 0 3px;
+
+			& i {
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				text-align: center;
+				line-height: 50px;
+				vertical-align: middle;
+				background: @secondaryPurple;
+				font-size: 2.8rem;
+				}
+			}
+		}
+
+		.scroll {
+			position: relative;
+			top: 60px;
+
+			& a {
+				color: @defaultWhite;
+			}
+
+			& i {
+				font-size: 2.8rem;
+			}
+
+			.keyframes(bob-effect; {
+				0% {
+					transform: translateY(8px)
+				}
+			});
+
+			.animation(bob-effect 0.4s ease-in-out infinite alternate);
+		}
+
+	}
+
+	.box-two {
+		display: flex;
+		align-self: center;
+		flex-direction: column;
+		background: @primaryPurple;
+		width: 800px;
+		border-radius: 5px;
+		margin-top: 20px;
+		color: @defaultWhite;
+		font-style: italic;
+
+		& h1 {
+			.BoxHeading;
+			.BoxSpacing;
+		}
+
+		& p {
+			font-size: 1.8rem;
+			padding: 0 40px 30px;
+		}
+	}
+
+	.box-three {
+		display: flex;
+		align-self: center;
+		flex-direction: column;
+		background: @primaryPurple;
+		width: 800px;
+		border-radius: 5px;
+		margin-top: 20px;
+		color: @defaultWhite;
+		font-style: italic;
+
+		& h1 {
+			.BoxHeading;
+		}
+
+		& ul {
+			display: flex;
+			justify-content: space-around;
+
+			& li {
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				text-align: center;
+				line-height: 100px;
+				vertical-align: middle;
+				background: @secondaryPurple;
+				margin: 20px 0;
+
+				& i {
+					padding: 20px;
+				}
+			}
+		}
+
+	}
+
+	.box-four {
+		display: flex;
+		align-self: center;
+		flex-direction: column;
+		background: @primaryPurple;
+		width: 800px;
+		border-radius: 5px;
+		margin-top: 20px;
+		color: @defaultWhite;
+
+		& h1 {
+			.BoxHeading;
+			margin: 20px 40px 20px;
+		}
+
+		& ul li {
+			font-size: 1.6rem;
+			margin: 0 40px 20px;
+
+			& span {
+				font-style: italic;
+				padding: 0 10px;
 			}
 		}
 	}
+
+	.box-five {
+		display: flex;
+		align-self: center;
+		flex-direction: column;
+		background: @primaryPurple;
+		width: 800px;
+		border-radius: 5px;
+		margin-top: 20px;
+		color: @defaultWhite;
+
+		& h1 {
+			.BoxHeading;
+			.BoxSpacing;
+		}
+
+		& ul li {
+			font-size: 1.6rem;
+			// TRBL
+			margin: 0 40px 20px;
+
+			& span {
+				font-style: italic;
+				padding: 0 10px;
+			}
+		}
+	}
+
+	.box-contact {
+		display: flex;
+		align-self: center;
+		flex-direction: column;
+		background: @primaryPurple;
+		width: 800px;
+		border-radius: 5px;
+		margin-top: 20px;
+		color: @defaultWhite;
+		margin-bottom: 100px;
+
+		& h1 {
+			.BoxHeading;
+			.BoxSpacing;
+		}
+
+		& form {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			align-items: center;
+
+			& input {
+				background: transparent;
+				border: 1px solid @secondaryPurple;
+				padding: 20px;
+				border-radius: 5px;
+				width: 500px;
+				margin: 10px 40px 0px;
+				color: white;
+				font-size: 1.6rem;
+
+				&::-webkit-input-placeholder {
+					color: #111e33;
+				}
+			}
+
+			& textarea {
+				background: transparent;
+				border: 1px solid @secondaryPurple;
+				padding: 20px;
+				border-radius: 5px;
+				width: 500px;
+				height: 300px;
+				margin: 10px 40px 30px;
+				color: white;
+				resize: none;
+				font-size: 1.6rem;
+
+				&::-webkit-input-placeholder {
+					color: #111e33;
+				}
+			}
+		}
+	}
+
 }
