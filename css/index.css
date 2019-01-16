@@ -229,7 +229,6 @@ body {
   flex-direction: column;
   background: #081427;
   width: 800px;
-  height: 400px;
   border-radius: 5px;
   margin-top: 20px;
   color: #fff;
@@ -237,4 +236,38 @@ body {
 }
 .box-three h1 {
   margin: 20px 40px 20px;
+}
+.box-three ul {
+  display: flex;
+  justify-content: space-around;
+}
+.box-three ul li {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  vertical-align: middle;
+  background: #111e33;
+  margin: 20px 0;
+}
+.box-three ul li i {
+  padding: 20px;
+}
+.box-four {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  background: #081427;
+  width: 800px;
+  border-radius: 5px;
+  margin-top: 20px;
+  color: #fff;
+}
+.box-four h1 {
+  margin: 20px 40px 20px;
+}
+.box-four ul {
+  display: flex;
+  justify-content: center;
 }
