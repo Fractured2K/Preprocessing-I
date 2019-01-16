@@ -89,66 +89,50 @@ html, body {
 	border-radius: 5px;
 	margin-top: 100px;
 
-	& div ul a {
-    color: #fff;
-    text-decoration: none;
-	padding: 0 3px;
+	.picture {
+	margin-bottom: 20px;
 
-	// Socials background
-	& i {
-		width: 50px;
-		height: 50px;
+	& img {
+		width: 150px;
+		height: 150px;
 		border-radius: 50%;
-		text-align: center;
-		line-height: 50px;
-		vertical-align: middle;
-		background: #111e33;
-		font-size: 2.8rem;
 		}
 	}
 
-}
+	& h1 	{
+    	font-size: 2.8rem;
+    	font-weight: 900;
+		color: #fff;
 
-.picture {
-    margin-bottom: 20px;
-}
+		& span {
+			font-weight: 300;
+		}
+	}
 
-.picture img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
+	.social {
+		margin: 20px 0;
 
-/* Heading name */
-.container h1 {
-    font-size: 2.8rem;
-    font-weight: 900;
-    color: #fff;
-}
+		& ul a {
+		color: #fff;
+		text-decoration: none;
+		padding: 0 3px;
 
-/* Heading small text */
-.container span {
-    font-weight: 300;
-}
+		& i {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 50px;
+			vertical-align: middle;
+			background: #111e33;
+			font-size: 2.8rem;
+			}
+		}
+	}
 
-// Socials container
-.social {
-    margin: 20px 0;
-}
-
-// Scroll
-.scroll {
+	.scroll {
 	position: relative;
 	top: 60px;
-
-	.keyframes(bob; {
-		0% {
-			transform: translateY(8px)
-		}
-	});
-
-	.animation(bob 0.4s ease-in-out infinite alternate);
-
 
 	& a {
 		color: #fff;
@@ -157,6 +141,16 @@ html, body {
 	& i {
 		font-size: 2.8rem;
 	}
+
+	.keyframes(bob; {
+		0% {
+			transform: translateY(8px)
+		}
+	});
+
+	.animation(bob 0.4s ease-in-out infinite alternate);
+}
+
 }
 
 .box-two {
@@ -198,22 +192,24 @@ html, body {
 	& ul {
 		display: flex;
 		justify-content: space-around;
+
+		& li {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 100px;
+			vertical-align: middle;
+			background: #111e33;
+			margin: 20px 0;
+
+			& i {
+				padding: 20px;
+			}
+		}
 	}
 
-	& ul li {
-		width: 100px;
-		height: 100px;
-		border-radius: 50%;
-		text-align: center;
-		line-height: 100px;
-		vertical-align: middle;
-		background: #111e33;
-		margin: 20px 0;
-	}
 
-	& ul li i {
-		padding: 20px;
-	}
 }
 
 .box-four {
@@ -230,8 +226,94 @@ html, body {
 		margin: 20px 40px 20px;
 	}
 
-	& ul {
+	& ul li {
+		font-size: 1.6rem;
+		margin: 0 40px 20px;
+
+		& span {
+			font-style: italic;
+			padding: 0 10px;
+		}
+	}
+}
+
+.box-five {
+	display: flex;
+    align-self: center;
+    flex-direction: column;
+    background: #081427;
+    width: 800px;
+	border-radius: 5px;
+	margin-top: 20px;
+	color: #fff;
+
+	& h1 {
+		margin: 20px 40px 20px;
+	}
+
+	& ul li {
+		font-size: 1.6rem;
+		// TRBL
+		margin: 0 40px 20px;
+
+		 & span {
+			font-style: italic;
+			padding: 0 10px;
+		}
+	}
+}
+
+.box-contact {
+	display: flex;
+    align-self: center;
+    flex-direction: column;
+    background: #081427;
+    width: 800px;
+	border-radius: 5px;
+	margin-top: 20px;
+	color: #fff;
+	margin-bottom: 100px;
+
+	& h1 {
+		margin: 20px 40px 20px;
+	}
+
+	& form {
 		display: flex;
 		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+
+		& input {
+			background: transparent;
+			border: 1px solid #111e33;
+			padding: 20px;
+			border-radius: 5px;
+			width: 500px;
+			margin: 10px 40px 0px;
+			color: white;
+			font-size: 1.6rem;
+
+			&::-webkit-input-placeholder {
+				color: #111e33;
+			}
+		}
+
+		& textarea {
+			background: transparent;
+			border: 1px solid #111e33;
+			padding: 20px;
+			border-radius: 5px;
+			width: 500px;
+			height: 300px;
+			margin: 10px 40px 30px;
+			color: white;
+			resize: none;
+			font-size: 1.6rem;
+
+			&::-webkit-input-placeholder {
+				color: #111e33;
+			}
+		}
 	}
 }

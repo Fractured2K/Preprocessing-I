@@ -153,12 +153,31 @@ body {
   border-radius: 5px;
   margin-top: 100px;
 }
-.box-one div ul a {
+.box-one .picture {
+  margin-bottom: 20px;
+}
+.box-one .picture img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.box-one h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: #fff;
+}
+.box-one h1 span {
+  font-weight: 300;
+}
+.box-one .social {
+  margin: 20px 0;
+}
+.box-one .social ul a {
   color: #fff;
   text-decoration: none;
   padding: 0 3px;
 }
-.box-one div ul a i {
+.box-one .social ul a i {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -168,42 +187,21 @@ body {
   background: #111e33;
   font-size: 2.8rem;
 }
-.picture {
-  margin-bottom: 20px;
-}
-.picture img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-}
-/* Heading name */
-.container h1 {
-  font-size: 2.8rem;
-  font-weight: 900;
-  color: #fff;
-}
-/* Heading small text */
-.container span {
-  font-weight: 300;
-}
-.social {
-  margin: 20px 0;
-}
-.scroll {
+.box-one .scroll {
   position: relative;
   top: 60px;
   animation: bob 0.4s ease-in-out infinite alternate;
+}
+.box-one .scroll a {
+  color: #fff;
+}
+.box-one .scroll i {
+  font-size: 2.8rem;
 }
 @keyframes bob {
   0% {
     transform: translateY(8px);
   }
-}
-.scroll a {
-  color: #fff;
-}
-.scroll i {
-  font-size: 2.8rem;
 }
 .box-two {
   display: flex;
@@ -267,7 +265,80 @@ body {
 .box-four h1 {
   margin: 20px 40px 20px;
 }
-.box-four ul {
+.box-four ul li {
+  font-size: 1.6rem;
+  margin: 0 40px 20px;
+}
+.box-four ul li span {
+  font-style: italic;
+  padding: 0 10px;
+}
+.box-five {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  background: #081427;
+  width: 800px;
+  border-radius: 5px;
+  margin-top: 20px;
+  color: #fff;
+}
+.box-five h1 {
+  margin: 20px 40px 20px;
+}
+.box-five ul li {
+  font-size: 1.6rem;
+  margin: 0 40px 20px;
+}
+.box-five ul li span {
+  font-style: italic;
+  padding: 0 10px;
+}
+.box-contact {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  background: #081427;
+  width: 800px;
+  border-radius: 5px;
+  margin-top: 20px;
+  color: #fff;
+  margin-bottom: 100px;
+}
+.box-contact h1 {
+  margin: 20px 40px 20px;
+}
+.box-contact form {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.box-contact form input {
+  background: transparent;
+  border: 1px solid #111e33;
+  padding: 20px;
+  border-radius: 5px;
+  width: 500px;
+  margin: 10px 40px 0px;
+  color: white;
+  font-size: 1.6rem;
+}
+.box-contact form input::-webkit-input-placeholder {
+  color: #111e33;
+}
+.box-contact form textarea {
+  background: transparent;
+  border: 1px solid #111e33;
+  padding: 20px;
+  border-radius: 5px;
+  width: 500px;
+  height: 300px;
+  margin: 10px 40px 30px;
+  color: white;
+  resize: none;
+  font-size: 1.6rem;
+}
+.box-contact form textarea::-webkit-input-placeholder {
+  color: #111e33;
 }
