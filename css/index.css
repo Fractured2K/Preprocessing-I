@@ -156,6 +156,12 @@ body {
   border-radius: 5px;
   margin-top: 100px;
 }
+@media (max-width: 500px) {
+  .container .box-one {
+    width: 400px;
+    margin-top: 50px;
+  }
+}
 .container .box-one .picture {
   margin-bottom: 20px;
 }
@@ -217,6 +223,11 @@ body {
   color: #fff;
   font-style: italic;
 }
+@media (max-width: 500px) {
+  .container .box-two {
+    width: 400px;
+  }
+}
 .container .box-two h1 {
   font-size: 2.8rem;
   font-weight: 900;
@@ -238,6 +249,11 @@ body {
   color: #fff;
   font-style: italic;
 }
+@media (max-width: 500px) {
+  .container .box-three {
+    width: 400px;
+  }
+}
 .container .box-three h1 {
   font-size: 2.8rem;
   font-weight: 900;
@@ -246,6 +262,11 @@ body {
 .container .box-three ul {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .container .box-three ul {
+    flex-wrap: wrap;
+  }
 }
 .container .box-three ul li {
   width: 100px;
@@ -256,6 +277,11 @@ body {
   vertical-align: middle;
   background: #111e33;
   margin: 20px 0;
+}
+@media (max-width: 500px) {
+  .container .box-three ul li {
+    margin: 20px;
+  }
 }
 .container .box-three ul li i {
   padding: 20px;
@@ -269,6 +295,11 @@ body {
   border-radius: 5px;
   margin-top: 20px;
   color: #fff;
+}
+@media (max-width: 500px) {
+  .container .box-four {
+    width: 400px;
+  }
 }
 .container .box-four h1 {
   font-size: 2.8rem;
@@ -293,6 +324,11 @@ body {
   border-radius: 5px;
   margin-top: 20px;
   color: #fff;
+}
+@media (max-width: 500px) {
+  .container .box-five {
+    width: 400px;
+  }
 }
 .container .box-five h1 {
   font-size: 2.8rem;
@@ -319,6 +355,12 @@ body {
   color: #fff;
   margin-bottom: 100px;
 }
+@media (max-width: 500px) {
+  .container .box-contact {
+    width: 400px;
+    margin-bottom: 50px;
+  }
+}
 .container .box-contact h1 {
   font-size: 2.8rem;
   font-weight: 900;
@@ -344,6 +386,11 @@ body {
 .container .box-contact form input::-webkit-input-placeholder {
   color: #111e33;
 }
+@media (max-width: 500px) {
+  .container .box-contact form input {
+    width: 315px;
+  }
+}
 .container .box-contact form textarea {
   background: transparent;
   border: 1px solid #111e33;
@@ -358,4 +405,9 @@ body {
 }
 .container .box-contact form textarea::-webkit-input-placeholder {
   color: #111e33;
+}
+@media (max-width: 500px) {
+  .container .box-contact form textarea {
+    width: 315px;
+  }
 }
