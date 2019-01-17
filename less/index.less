@@ -360,7 +360,7 @@ html, body {
 				border-radius: 5px;
 				width: 500px;
 				height: 300px;
-				margin: 10px 40px 30px;
+				margin: 10px 40px 0;
 				color: white;
 				resize: none;
 				font-size: 1.6rem;
@@ -373,7 +373,30 @@ html, body {
 					width: 315px;
 				}
 			}
+
+			& button {
+				background: transparent;
+				border: 1px solid @secondaryPurple;
+				padding: 20px;
+				margin: 10px 0 30px;
+				width: 500px;
+				font-size: 1.6rem;
+				color: @secondaryPurple;
+				transition: 0.3s;
+				outline: none;
+
+				&:hover {
+					color: #fff;
+					background: @secondaryPurple;
+				}
+
+
+				@media (max-width: 500px) {
+					width: 315px;
+				}
+			}
 		}
+
 	}
 
 }
