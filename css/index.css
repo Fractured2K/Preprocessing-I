@@ -144,6 +144,28 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+.container header {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+.container header nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 4rem;
+  background: #081427;
+  width: 800px;
+  font-size: 2.5rem;
+}
+.container header nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.container header nav a:hover {
+  color: lightgray;
+}
 .container .box-one {
   display: flex;
   justify-content: center;
@@ -154,7 +176,6 @@ body {
   width: 800px;
   height: 500px;
   border-radius: 5px;
-  margin-top: 100px;
 }
 @media (max-width: 500px) {
   .container .box-one {
